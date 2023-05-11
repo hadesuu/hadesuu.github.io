@@ -1,0 +1,264 @@
+:root{
+    scroll-behavior: smooth;
+
+}
+::-webkit-scrollbar{
+    display: none;
+}
+@font-face {
+    font-family: intel;
+    src: url(./CZCIONKA/intel/intelone-display-light.ttf);
+}
+
+@font-face {
+    font-family: amd;
+    src: url(./CZCIONKA/AMD/spyagency3_2.ttf);
+}
+
+
+*{
+    font-family: intel, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display:flex; 
+    flex-direction:column;
+    min-height: 100vh;
+    background-color: #466ca4;
+}
+
+a{
+    color: #3a3431;
+    text-decoration: none;
+    transition: 0.5s;
+}
+a:hover{
+    color: orange;
+    text-decoration: none;
+}
+
+header{
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    max-width: 1000px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 100px;
+    background-color: #0071c5;
+    width: 100%;
+    border-top: 1px #466ca4 solid;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+nav{
+    margin: 0 auto;
+    text-align: center;
+    max-width: 1000px;
+    background-color: #008df6;
+    width: 100%;
+    
+}
+
+.menu{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+    
+}
+
+main{
+    max-width: 1000px;
+    text-align: left;
+    margin: 0 auto;
+    width: 100%;
+    flex: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+footer{
+    text-align: center;
+    margin: 20px;
+    height: 50px;
+    max-width: 1000px;
+    background-color: #008df6;
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 1px #466ca4 solid;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+h2{
+    margin: 20px;
+    text-align: center;
+    
+}
+h3{
+    margin: 20px;
+}
+
+.p1{
+    text-indent: 1cm;
+    margin: 20px;
+}
+
+.filip{
+    float: right;
+    padding: 10px;
+
+}
+
+.aka1{
+    display: flex;
+}
+#aka2{
+    display: flex;
+}
+
+.lewy{
+    float: left;
+    padding: 10px;
+}
+
+img.lewy{
+    width: 280px;
+    height: 180px;
+}
+p{
+    margin: 20px;
+}
+
+#duo{
+    padding: 20px;
+    
+}
+
+.intel{
+    display: flex;
+    flex-direction: row;
+}
+.amd{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intel>.xdd{
+    border: solid 1px black;
+    margin: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 1rem;
+    transition: 0.5s;
+    max-width: 900px;
+    height: 80%;
+    width: 80%;
+}
+
+.xdd{
+    border: solid 1px black;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 1rem;
+    transition: 0.5s;
+    max-width: 900px;
+    height: 80%;
+    width: 80%;
+}
+.xdd:hover{
+    height: 90%;
+    width: 90%;
+    max-width: 900px;
+}
+
+audio{
+    margin: 0 auto;
+}
+
+.gen{
+    width: 99%;
+    padding: 10px;
+    border: 1px white solid;
+    border-radius: 30px;
+}
+
+embed{
+    margin: 20px;
+}
+
+#audi{
+    margin: 0 auto;
+    width: 30%;
+}
+
+
+
+@media print{
+    *{
+        background-color: white;
+        color: black;
+    }
+    embed{
+        display: none;
+    }
+    #audi{
+        display: none;
+    }
+}
+
+#biely{
+    color: white;
+}
+#porvalo{
+    max-width: 200px;
+    max-height: 200px;
+    margin: 0 auto;
+    border: solid 1px white;
+    border-radius: 30px;
+}
+@media only screen and (max-width: 800px) {
+
+    main {
+      padding: 0;
+    }
+
+    .intel{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .aka1{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #aka2{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .filip{
+        float: none;
+    }
+    .lewy{
+        float: none;
+    }
+    embed{
+        margin: 0 auto;
+        margin-bottom: 10px;
+        width: 260px;
+    }
+    h1,h2,h3{
+        text-align: center;
+    }
+  }
+
