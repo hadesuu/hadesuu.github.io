@@ -191,7 +191,7 @@ audio{
     border-radius: 30px;
 }
 
-embed{
+iframe{
     margin: 20px;
 }
 
@@ -207,7 +207,7 @@ embed{
         background-color: white;
         color: black;
     }
-    embed{
+    iframe{
         display: none;
     }
     #audi{
